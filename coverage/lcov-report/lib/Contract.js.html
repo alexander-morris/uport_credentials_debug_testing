@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for lib/Contract.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">lib</a> Contract.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">92.41% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>73/79</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">79.07% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>34/43</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>11/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">93.33% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>70/75</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">77x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">67x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';
+&nbsp;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.ContractFactory = undefined;
+&nbsp;
+var _toConsumableArray2 = require('babel-runtime/helpers/toConsumableArray');
+&nbsp;
+var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
+&nbsp;
+var _extends2 = require('babel-runtime/helpers/extends');
+&nbsp;
+var _extends3 = _interopRequireDefault(_extends2);
+&nbsp;
+var _getIterator2 = require('babel-runtime/core-js/get-iterator');
+&nbsp;
+var _getIterator3 = _interopRequireDefault(_getIterator2);
+&nbsp;
+var _keys = require('babel-runtime/core-js/object/keys');
+&nbsp;
+var _keys2 = _interopRequireDefault(_keys);
+&nbsp;
+var _typeof2 = require('babel-runtime/helpers/typeof');
+&nbsp;
+var _typeof3 = _interopRequireDefault(_typeof2);
+&nbsp;
+function _interopRequireDefault(obj) { return obj &amp;&amp; obj.__esModule ? obj : <span class="branch-1 cbranch-no" title="branch not covered" >{ default: obj };</span> }
+&nbsp;
+// A derivative work of Nick Dodson's eths-contract https://github.com/ethjs/ethjs-contract/blob/master/src/index.js
+&nbsp;
+var isTransactionObject = function isTransactionObject(txObj) {
+  var txObjectProperties = ['from', 'to', 'data', 'value', 'gasPrice', 'gas'];
+  if ((typeof txObj === 'undefined' ? 'undefined' : (0, _typeof3.default)(txObj)) !== 'object') return false;
+  // Return true for empty object
+  <span class="missing-if-branch" title="if path not taken" >I</span>if ((0, _keys2.default)(txObj).length === 0) <span class="cstat-no" title="statement not covered" >return true;</span>
+  // Also return true if the object contains any of the expected txObject properties
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
+&nbsp;
+  try {
+    for (var _iterator = (0, _getIterator3.default)(txObjectProperties), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var prop = _step.value;
+&nbsp;
+      if (prop in txObj) return true;
+    }
+  } catch (err) {
+<span class="cstat-no" title="statement not covered" >    _didIteratorError = true;</span>
+<span class="cstat-no" title="statement not covered" >    _iteratorError = err;</span>
+  } finally {
+    try {
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (!_iteratorNormalCompletion &amp;&amp; _iterator.return) {
+<span class="cstat-no" title="statement not covered" >        _iterator.return();</span>
+      }
+    } finally {
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (_didIteratorError) {
+<span class="cstat-no" title="statement not covered" >        throw _iteratorError;</span>
+      }
+    }
+  }
+&nbsp;
+  return false;
+};
+&nbsp;
+var getCallableMethodsFromABI = function getCallableMethodsFromABI(contractABI) {
+  return contractABI.filter(function (json) {
+    return (json.type === 'function' || json.type === 'event') &amp;&amp; json.name.length &gt; 0;
+  });
+};
+&nbsp;
+var encodeMethodReadable = function encodeMethodReadable(methodObject, methodArgs) {
+  var dataString = methodObject.name + '(';
+&nbsp;
+  for (var i = 0; i &lt; methodObject.inputs.length; i++) {
+    var input = methodObject.inputs[i];
+    var argString = input.type + ' ';
+&nbsp;
+    if (input.type === 'string') {
+      argString += '"' + methodArgs[i] + '"';
+    } else <span class="missing-if-branch" title="if path not taken" >I</span>if (input.type === ('bytes32' || <span class="branch-1 cbranch-no" title="branch not covered" >'bytes')</span>) {
+      // TODO don't assume hex input? or throw error if not hex
+      // argString += `0x${new Buffer(methodArgs[i], 'hex')}`
+<span class="cstat-no" title="statement not covered" >      argString += '' + methodArgs[i];</span>
+    } else {
+      argString += '' + methodArgs[i];
+    }
+&nbsp;
+    dataString += argString;
+&nbsp;
+    if (methodObject.inputs.length - 1 !== i) {
+      dataString += ', ';
+    }
+  }
+  return dataString += ')';
+};
+&nbsp;
+var ContractFactory = function ContractFactory(extend) {
+  return function (contractABI) {
+    var output = {};
+    output.at = function atContract(address) {
+&nbsp;
+      function Contract() {
+        var self = this;
+        self.abi = contractABI || <span class="branch-1 cbranch-no" title="branch not covered" >[];</span>
+        self.address = address || <span class="branch-1 cbranch-no" title="branch not covered" >'0x';</span>
+&nbsp;
+        getCallableMethodsFromABI(contractABI).forEach(function (methodObject) {
+          self[methodObject.name] = function contractMethod() {
+&nbsp;
+            if (methodObject.constant === true) {
+              throw new Error('A call does not return the txobject, no transaction necessary.');
+            }
+&nbsp;
+            if (methodObject.type === 'event') {
+              throw new Error('An event does not return the txobject, events not supported');
+            }
+&nbsp;
+            var providedTxObject = {};
+            var methodArgs = [].slice.call(arguments);
+            var nArgs = methodObject.inputs.length;
+&nbsp;
+            <span class="missing-if-branch" title="else path not taken" >E</span>if (methodObject.type === 'function') {
+              // Remove transaction object if provided
+              if (isTransactionObject(methodArgs[nArgs])) {
+                providedTxObject = methodArgs.splice(nArgs, 1)[0];
+              }
+&nbsp;
+              var methodTxObject = (0, _extends3.default)({}, providedTxObject, {
+                to: self.address,
+                function: encodeMethodReadable(methodObject, methodArgs)
+              });
+&nbsp;
+              if (!extend) return methodTxObject;
+&nbsp;
+              var extendArgs = methodArgs.slice(nArgs);
+              return extend.apply(undefined, [methodTxObject].concat((0, _toConsumableArray3.default)(extendArgs)));
+            }
+          };
+        });
+      }
+&nbsp;
+      return new Contract();
+    };
+&nbsp;
+    return output;
+  };
+};
+&nbsp;
+exports.ContractFactory = ContractFactory;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Oct 31 2018 14:49:33 GMT-0500 (CDT)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
